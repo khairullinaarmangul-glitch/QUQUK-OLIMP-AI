@@ -30,7 +30,21 @@ button.primary,.primary {background:#edbf67 !important;color:#12223c !important;
 button,select,a {touch-action:manipulation}
 button:focus-visible,a:focus-visible,select:focus-visible {outline:3px solid #f9d88c;outline-offset:3px}
 @media(max-width:700px){header{padding:24px 18px !important}nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}nav button{font-size:14px;padding:11px 8px !important;overflow-wrap:anywhere}.panel{border-radius:16px !important}main{padding-left:12px !important;padding-right:12px !important}#books .grid{grid-template-columns:1fr !important}}
-</style></head>
+</style>
+<style id="quqyq-contrast-fix">
+/* Accessible contrast for quiz and learning feedback on dark theme */
+#quiz .choice, #quiz .choice:disabled {background:#f5f7fc !important;color:#14253e !important;border:2px solid #c9d4e3 !important;opacity:1 !important;}
+#quiz .choice.selected {background:#dbeeff !important;color:#10243e !important;border-color:#3286b8 !important;}
+#quiz .choice.correct, #quiz .choice.correct:disabled {background:#dcfce7 !important;color:#14532d !important;border-color:#16a34a !important;}
+#quiz .choice.wrong, #quiz .choice.wrong:disabled {background:#fee2e2 !important;color:#7f1d1d !important;border-color:#dc2626 !important;}
+#quiz .feedback, #cases .feedback {background:#e8f2ff !important;color:#17365d !important;border-left:4px solid #2586b7 !important;}
+#quiz .feedback *, #cases .feedback * {color:#17365d !important;}
+#books .book-feedback {background:#e8f2ff !important;color:#17365d !important;}
+#books .book-feedback p, #books .book-feedback b {color:#17365d !important;}
+#books .book-answer, #books .book-answer:disabled {color:#17304d !important;background:#fff !important;opacity:1 !important;}
+#quiz button.secondary, #cases button.secondary, #results button.secondary {color:#17365d !important;background:#e7eef6 !important;}
+</style>
+</head>
 <body>
 <header><div class="brand">⚖ QŪQYQ OLYMP AI</div><h1 class="hero">Құқық олимпиадасына<br/>ақылды дайындық</h1><p class="lead">Қазақстан құқығын меңгеріңіз: тест тапсырыңыз, құқықтық жағдайларды талдаңыз және нәтижені бірден көріңіз. 9–11-сыныптарға арналған оқу тренажері.</p><nav aria-label="Бөлімдер"><button class="active" data-tab="home">Басты бет</button><button data-tab="quiz">Тест орталығы</button><button data-tab="cases">Құқықтық кейстер</button><button data-tab="library">Заңнама</button><button data-tab="books">📚 Оқулықтар мен тапсырмалар</button><button data-tab="results">Нәтижелер</button><button data-tab="olympiad">🏆 Олимпиада</button><button data-tab="curriculum">🗂️ Оқу картасы</button><button data-tab="practicecases">⚖️ 22 кейс</button></nav><p class="muted" style="font-size:.87rem;margin-top:14px">Сынақ нұсқасы · Оқулық мәтіндері мен құқықтық нормалар ресми дереккөздермен толық салыстырылғаннан кейін түпкілікті жарияланады.</p></header>
 <main>
